@@ -12,3 +12,10 @@ body{
 main{
     flex-grow: 1;
 }
+
+.bgTemp{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,54,0.5775560224089635) 100%, rgba(0,212,255,1) 100%);
+    border: 1px solid white;
+    border-radius: 50px;
+}

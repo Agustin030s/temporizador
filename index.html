@@ -53,26 +53,30 @@
         <div class="col-md-10">
             <div class="row">
                 <div class="col-md-4">
-                    <input type="number" id="inputHoras" class="form-control mt-2" placeholder="Horas" maxlength="2" minlength="1" required>
+                    <input type="number" id="inputHoras" class="form-control mt-2" placeholder="Horas" maxlength="2" minlength="1">
                 </div>
                 <div class="col-md-4">
-                    <input type="number" id="inputMinutos" class="form-control mt-2" placeholder="Minutos">
+                    <input type="number" id="inputMinutos" class="form-control mt-2" placeholder="Minutos" minlength="1" maxlength="2">
                 </div>
                 <div class="col-md-4">
-                    <input type="number" id="inputSegundos" class="form-control mt-2" placeholder="segundos">
+                    <input type="number" id="inputSegundos" class="form-control mt-2" placeholder="segundos" minlength="1" maxlength="2">
                 </div>
             </div>
         </div>
         <div class="mt-2 mt-md-0 col-md-2">
-            <button class="btn btn-success w-100">Aceptar</button>
+            <button class="btn btn-success w-100">Iniciar</button>
         </div>
       </form>
       <section class="mt-5">
-          <div class="d-flex justify-content-center align-items-center px-5 bgHora">
+          <div class="d-flex justify-content-center align-items-center px-5 bgTemp">
             <h2 id="horas" class="mx-1-0">00 :</h2>
             <h2 id="minutos" class="mx-1"> 00 :</h2>
             <h2 id="segundos" class="mx-1">00</h2>
         </div>
+      </section>
+      <section class="mt-3 text-center">
+        <button class="btn btn-warning" id="btnPausar">Pausar</button>
+        <button class="btn btn-danger" id="btnReset">Reset</button>
       </section>
     </main>
 
